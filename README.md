@@ -47,7 +47,7 @@
         - By default the services will be available at:
 
           * HTTP CRUD Services (POST, GET (Retrieve All)):  127.0.0.1:8080/service/user/
-          * HTTP CRUD Services (GET, DELETE ):              127.0.0.1:8080/service/user/{id}
+          * HTTP CRUD Services (GET, DELETE ):              127.0.0.1:8080/service/user/{$ID}
 
           * Search (QueryParams: name, email, address, phone, orderBy, startPage, pageSize):    127.0.0.1:8080/filter/user/findby?$PARAM=$VALUE
 
