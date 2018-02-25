@@ -1,0 +1,2 @@
+2018-02-19 22:53:40,917 WARN  [SqlExceptionHelper] (main) SQL Error: -5501, SQLState: 42501
+2018-02-19 22:53:40,919 ERROR [SqlExceptionHelper] (main) systemUser lacks privilege or object not found: SYSTEMUSER

@@ -1,0 +1,19 @@
+2018-02-25 15:41:20,765 INFO  [DatabaseService] (main) Connecting to database jdbc:postgresql://localhost:5432/decora ...
+2018-02-25 15:41:21,832 WARN  [DriverManagerConnectionProviderImpl] (main) HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-02-25 15:41:22,989 INFO  [DatabaseService] (main) Connected
+2018-02-25 15:41:22,994 INFO  [DecoraWS] (main) Version: unknown
+2018-02-25 15:41:23,001 INFO  [DecoraWS] (DecoraWS State Machine) Starting...
+2018-02-25 15:41:23,222 INFO  [Reflections] (DecoraWS State Machine) Reflections took 44 ms to scan 1 urls, producing 82 keys and 103 values 
+2018-02-25 15:41:23,642 INFO  [i18n] (DecoraWS State Machine) RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.decora.http.DecoraWSApplication
+2018-02-25 15:41:23,648 INFO  [i18n] (DecoraWS State Machine) RESTEASY002200: Adding class resource io.swagger.jaxrs.listing.ApiListingResource from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:41:23,648 INFO  [i18n] (DecoraWS State Machine) RESTEASY002205: Adding provider class io.swagger.jaxrs.listing.SwaggerSerializers from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:41:23,648 INFO  [i18n] (DecoraWS State Machine) RESTEASY002205: Adding provider class com.decora.util.RESTEasyJodaModuleProvider from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:41:23,648 INFO  [i18n] (DecoraWS State Machine) RESTEASY002205: Adding provider class com.decora.http.WebApplicationExceptionMapper from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:41:23,657 INFO  [i18n] (DecoraWS State Machine) RESTEASY002220: Adding singleton resource com.decora.http.resource.systemuser.SystemUserService from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:41:23,657 INFO  [i18n] (DecoraWS State Machine) RESTEASY002210: Adding provider singleton com.decora.http.filters.Filter from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:41:23,657 INFO  [i18n] (DecoraWS State Machine) RESTEASY002220: Adding singleton resource com.decora.http.resource.authentication.AuthenticationService from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:41:23,657 INFO  [i18n] (DecoraWS State Machine) RESTEASY002220: Adding singleton resource com.decora.http.resource.filter.FilterSystemUserService from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:41:23,786 INFO  [HTTPService] (DecoraWS State Machine) Starting...
+2018-02-25 15:41:23,799 INFO  [xnio] (DecoraWS State Machine) XNIO version 3.3.6.Final
+2018-02-25 15:41:23,828 INFO  [nio] (DecoraWS State Machine) XNIO NIO Implementation Version 3.3.6.Final
+2018-02-25 15:41:23,974 INFO  [HTTPService] (DecoraWS State Machine) Started at 127.0.0.1:8080

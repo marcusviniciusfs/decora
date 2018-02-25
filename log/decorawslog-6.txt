@@ -1,0 +1,125 @@
+2018-02-25 15:26:43,819 INFO  [DatabaseService] (main) Connecting to database jdbc:postgresql://localhost:5432/decora ...
+2018-02-25 15:26:44,980 WARN  [DriverManagerConnectionProviderImpl] (main) HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2018-02-25 15:26:46,105 INFO  [DatabaseService] (main) Connected
+2018-02-25 15:26:46,109 INFO  [DecoraWS] (main) Version: unknown
+2018-02-25 15:26:46,116 INFO  [DecoraWS] (DecoraWS State Machine) Starting...
+2018-02-25 15:26:46,376 INFO  [Reflections] (DecoraWS State Machine) Reflections took 62 ms to scan 1 urls, producing 82 keys and 102 values 
+2018-02-25 15:26:46,778 INFO  [i18n] (DecoraWS State Machine) RESTEASY002225: Deploying javax.ws.rs.core.Application: class com.decora.http.DecoraWSApplication
+2018-02-25 15:26:46,780 INFO  [i18n] (DecoraWS State Machine) RESTEASY002205: Adding provider class io.swagger.jaxrs.listing.SwaggerSerializers from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:26:46,780 INFO  [i18n] (DecoraWS State Machine) RESTEASY002205: Adding provider class com.decora.http.WebApplicationExceptionMapper from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:26:46,780 INFO  [i18n] (DecoraWS State Machine) RESTEASY002200: Adding class resource io.swagger.jaxrs.listing.ApiListingResource from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:26:46,780 INFO  [i18n] (DecoraWS State Machine) RESTEASY002205: Adding provider class com.decora.util.RESTEasyJodaModuleProvider from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:26:46,791 INFO  [i18n] (DecoraWS State Machine) RESTEASY002220: Adding singleton resource com.decora.http.resource.systemuser.SystemUserService from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:26:46,791 INFO  [i18n] (DecoraWS State Machine) RESTEASY002220: Adding singleton resource com.decora.http.resource.filter.FilterSystemUserService from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:26:46,791 INFO  [i18n] (DecoraWS State Machine) RESTEASY002220: Adding singleton resource com.decora.http.resource.authentication.AuthenticationService from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:26:46,791 INFO  [i18n] (DecoraWS State Machine) RESTEASY002210: Adding provider singleton com.decora.http.filters.Filter from Application class com.decora.http.DecoraWSApplication
+2018-02-25 15:26:46,929 INFO  [HTTPService] (DecoraWS State Machine) Starting...
+2018-02-25 15:26:46,944 INFO  [xnio] (DecoraWS State Machine) XNIO version 3.3.6.Final
+2018-02-25 15:26:46,975 INFO  [nio] (DecoraWS State Machine) XNIO NIO Implementation Version 3.3.6.Final
+2018-02-25 15:26:47,116 INFO  [HTTPService] (DecoraWS State Machine) Started at 127.0.0.1:8080
+2018-02-25 15:28:39,810 WARN  [Filter] (XNIO-1 task-2) Error validating Basic Authentication
+java.lang.NullPointerException
+	at com.decora.http.filters.Filter.filter(Filter.java:66) [classes/:?]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:263) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:285) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:264) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:175) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:802) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+2018-02-25 15:29:28,535 WARN  [Filter] (XNIO-1 task-3) Error validating Basic Authentication
+java.lang.NullPointerException
+	at com.decora.http.filters.Filter.filter(Filter.java:66) [classes/:?]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:263) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:285) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:264) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:175) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:802) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+2018-02-25 15:29:49,932 WARN  [Filter] (XNIO-1 task-4) Error validating Basic Authentication
+java.lang.NullPointerException
+	at com.decora.http.filters.Filter.filter(Filter.java:66) [classes/:?]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:263) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:395) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:202) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51) [resteasy-jaxrs-3.0.16.Final.jar:3.0.16.Final]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [jboss-servlet-api_3.1_spec-1.0.0.Final.jar:1.0.0.Final]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:285) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:264) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:175) [undertow-servlet-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:802) [undertow-core-1.3.23.Final.jar:1.3.23.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+2018-02-25 15:30:41,564 WARN  [Filter] (XNIO-1 task-6) No external authentication provided
+2018-02-25 15:33:57,783 WARN  [SqlExceptionHelper] (XNIO-1 task-9) SQL Error: 0, SQLState: 23505
+2018-02-25 15:33:57,783 ERROR [SqlExceptionHelper] (XNIO-1 task-9) ERROR: duplicate key value violates unique constraint "systemuser_email_key"
+  Detail: Key (email)=(marcus@gmail.com) already exists.

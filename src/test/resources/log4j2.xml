@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration strict="true">
+
+    <Appenders>
+        <Appender type="RollingFile" name="FILE" fileName="log_integration_test/usertrackinglog-current.txt"
+                  filePattern="log_integration_test/usertrackinglog-%d{yyyy-MM-dd_HH}h%d{mm}m%d{ss}.txt">
+            <Layout type="PatternLayout" pattern="%d %-5p [%c{1}] (%t) %m%n"/>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </Appender>
+
+        <Appender type="Console" name="STDOUT">
+            <Layout type="PatternLayout" pattern="%d %-5p [%c{1}] %m%n"/>
+        </Appender>
+    </Appenders>
+
+    <Loggers>
+        <Root level="warn">
+            <AppenderRef ref="FILE"/>
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
