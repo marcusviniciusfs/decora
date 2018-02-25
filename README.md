@@ -38,10 +38,9 @@
 
     5. INITIALIZATION
 
-        - Execute in the root installation directory: <java -jar decorawebservice-<VERSION>.jar start> to
-          initialize the application;
+        - Execute in the root installation directory: <java -jar decorawebservice-<VERSION>.jar start>;
 
-        - For Basic Authentication a root user is provided: Set the Authorization KEY at http client with VALUE: <Basic cm9vdEBkZWNvcmEuY29tOnNlbmhh>;
+        - For Basic Authentication a root user is provided: Set the <Authorization> KEY at http client with VALUE: <Basic cm9vdEBkZWNvcmEuY29tOnNlbmhh>;
 
         - Propritary KEY <X-Roles> provided for user roles with acceptable VALUES <administrador> and <search>
 
@@ -52,6 +51,4 @@
 
           * Search (QueryParams: name, email, address, phone, orderBy, startPage, pageSize):    127.0.0.1:8080/filter/user/findby?$PARAM=$VALUE
 
-          * Login:      127.0.0.1:8080/auth/login/
-
-
+          * Login:      127.0.0.1:8080/auth/login/$EMAIL/$PASSWORD
