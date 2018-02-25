@@ -33,7 +33,6 @@ public class FilterSystemUserService {
     @Produces(MediaType.APPLICATION_JSON)
     public final Response findBy(@QueryParam("name") final String theName, @QueryParam("email") final String theEmail,
                                          @QueryParam("address") final String theAddress, @QueryParam("phone") final String thePhone,
-                                         @QueryParam("from") final int from, @QueryParam("to") final int to,
                                          @QueryParam("orderBy") final String orderBY, @QueryParam("startPage") final int startPage, @QueryParam("pageSize") final int pageSize) {
 
         try {

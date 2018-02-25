@@ -17,8 +17,8 @@
 
         - There are two options to create the database: manually following the steps 'a', 'b', 'c', 'd' and 'e' or automatically;
 
-        - If you prefer the second option, go to 'e' step configuring the database properties and than execute the command
-          java -jar decorawebservice-<VERSION>.jar with the parameter -m at the prompt command and the application will uses the
+        - If you prefer the second option, after 'a' step go to 'e' step to configure database properties and than execute the command
+          java -jar decorawebservice-<VERSION>.jar with -m parameter at the prompt command and the application will uses the
           liquibase plugin to create a database with default configuration. Ex: <java -jar decorawebservice-<VERSION>.jar -m>
 
         a. Unzip the distribution zip into a directory the systemUser's choice;
@@ -38,4 +38,20 @@
 
     5. INITIALIZATION
 
-        - Execute in the root installation directory: <java -jar decorawebservice-<VERSION>.jar start>
+        - Execute in the root installation directory: <java -jar decorawebservice-<VERSION>.jar start> to
+          initialize the application;
+
+        - For Basic Authentication a root user is provided: Set the Authorization KEY at http client with VALUE: <Basic cm9vdEBkZWNvcmEuY29tOnNlbmhh>;
+
+        - Propritary KEY <X-Roles> provided for user roles with acceptable VALUES <administrador> and <search>
+
+        - By default the services will be available at:
+
+          * HTTP CRUD Services (POST, GET (Retrieve All)):  127.0.0.1:8080/service/user/
+          * HTTP CRUD Services (GET, DELETE ):              127.0.0.1:8080/service/user/{id}
+
+          * Search (QueryParams: name, email, address, phone, orderBy, startPage, pageSize):    127.0.0.1:8080/filter/user/findby?$PARAM=$VALUE
+
+          * Login:      127.0.0.1:8080/auth/login/
+
+
