@@ -1,6 +1,6 @@
     1. REPOSITORY
 
-        - https://github.com/marcusviniciusfs/decora.git;
+        - https://github.com/marcusviniciusfs/decora;
 
     2. BUILD
 
